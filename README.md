@@ -3,9 +3,9 @@
 Final Project
 
 Chillax - Meditation App: 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+Have you been working too hard and staring at your code for hours on end without a break? Then it might be time to CHILLAX. Want to listen to nature sounds or visualize yourself laying on the sandy beach on vacation? Have someone guide you through your break or listen to relaxing beats? This meditation app will be the perfect break for you! Choose your own chill, it's time to CHILLAX. 
 
-Author: Christine Lora, Brian Tate, Jae Loney, Osborn Del Angel
+Author: Christine Lora, Brian Tarte, Jae Loney, Osborn Del Angel
 Links and Resources
 submission PR
 
