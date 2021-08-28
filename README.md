@@ -5,7 +5,7 @@ Final Project
 Chillax - Meditation App: 
 I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
 
-Author: Christine Lora, Brian T, Jae L, Osborn D
+Author: Christine Lora, Brian Taete, Jae L, Osborn D
 Links and Resources
 submission PR
 
