@@ -5,8 +5,6 @@ console.log('Hello World');
 // global variables for constructor
 let userArray = [];
 
-
-
 // User Constructor function
 function User(name,occupation,){
   this.name = name;
@@ -17,3 +15,5 @@ function User(name,occupation,){
   userArray.push(this);
 };
 
+// Chill Constructor function
+function Chill (relaxTime, relaxObject, )

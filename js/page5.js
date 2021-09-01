@@ -1,8 +1,9 @@
 'use strict';
 
 // global variables for  5 minute videos
-let fiveNature =  "<iframe width='560' height='315' src='https://www.youtube.com/embed/JrQMlzvsLIU'></iframe>";
 
+let fiveNature =  "<iframe width='560' height='315' src='https://www.youtube.com/embed/JrQMlzvsLIU'></iframe>";
+.
 document.write(fiveNature);
 
 let fiveGuided = "<iframe width='560' height='315' src='https://www.youtube.com/embed/inpok4MKVLM'></iframe>";
@@ -33,3 +34,13 @@ document.write(fifteenGuided.video.value);
 
 let fifteenLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/XPkHUvg4-ts'></iframe>";
 document.write(fifteenLoFi.video.value);
+
+// switch (handle submit call will be what we look for in the switch). We do not need parenthesis here because we are looking for the return value of the function, aka which buttons were pressed. This will need to be handle submit because that is the event that puts the info into the function. Either this page or the app.js (most likely this page because it needs access to the video info/this is the time to show the videos)
+// The CASE is the condition that was met. In parenthesis.
+// After the colon is what you want to happen ie. document.write.
+// This code is WRONG but a test:
+switch(handleSubmit){
+  case (5minutes&&nature):
+  // From the radio buttons. Look at the colon here.
+    
+}
