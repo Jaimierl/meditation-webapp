@@ -1,18 +1,19 @@
-console.log('Hello World');
-// global variables for videos
-let fiveNature = {"video": {
-  "value": "<iframe width='560' height='315' src='https://www.youtube.com/embed/JrQMlzvsLIU'></iframe>"
-}
-};
+'use strict';
 
-document.write(fiveNature.video.value);
+console.log('Hello World');
+
 // global variables for constructor
 let userArray = [];
+
+
+
 // User Constructor function
-function User(name,occupation,time,meditation,type){
-  this.name = name,
-  this.occupation = occupation,
-  this.time = time,
-  this.meditation = meditation,
-  this.type = type
+function User(name,occupation,){
+  this.name = name;
+  this.occupation = occupation;
+  // this.time = time;
+  // this.meditation = meditation;
+  // this.type = type;
+  userArray.push(this);
 };
+
