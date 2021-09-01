@@ -21,26 +21,39 @@
     <div>
       <form>
           <fieldset>
-              <label for="time">How long do you want to Chillax for?</label>
-              <select id="time" name="relaxTime" required>
-                <option value="5">5 Minutes</option>
-                <option value="10">10 Minutes</option>
-                <option value="15">15 Minutes</option>
-                <option value="20">20 Minutes</option>
-              </select></br>
+            <p>How long do you want to Chillax for?</p>
+              <label>
+                <input type="radio" name="relaxTime" value="5">
+                5 minutes
+              </label>
+              <label>
+                <input type="radio" name="relaxTime" value="10">
+                10 minutes
+              </label>
+              <label>
+                <input type="radio" name="relaxTime" value="15">
+                15 minutes
+              </label></br>
               <label for="relax">What do you like to Chillax with?</label>
               <input type="text" name="relaxObject" id="relax" required></br>
-              <label for="environment">What do you do for a living?</label>
-              <select id="environment" name="relaxEnvironment" required>
-                <option value="Beach">Beach</option>
-                <option value="Mountains">Mountains</option>
-                <option value="Forest">Forest</option>
-                <option value="Lake">Lake</option>
-              </select></br>
+              <p>What do you want to meditate to?</p>
+              <label>
+                <input type="radio" name="relaxType" value="Nature">
+                Nature Sounds
+              </label>
+              <label>
+                <input type="radio" name="relaxType" value="Guided">
+                Guided Meditation 
+              </label>
+              <label>
+                <input type="radio" name="relaxType" value="LoFi">
+                Lo-Fi Beats
+              </label>
           </fieldset>
       </form>
       <button>Next</button>
   </div>
   </main>
+  <script src="js/app.js"></script>
 </body>
 </html>
