@@ -1,4 +1,43 @@
 
+iframe {
+  border-style: solid;
+  border-color: red;
+  
+}
 
+body {
+  background-image: url(/img/meditation-sitdown.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+h1{
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  margin-top: 230px;
+}
+
+ h3{
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  margin-top: auto;
+}
+
+h4{
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  margin-top: auto;
+}
+
+.card{
+  flex: auto;
+  opacity: 2;
+  background-color: #D5D8DE;
+  
+}
 
