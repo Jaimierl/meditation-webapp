@@ -10,8 +10,6 @@
 .zen-and-tea-4-hex { color: #E1F0D5; }
 .zen-and-tea-5-hex { color: #F5FFE0; }*/
 
-
-
 iframe {
   border-style: solid;
   border-color: red;
@@ -28,33 +26,68 @@ body {
 
 h1{
   font-size: 50px;
-  color: black;
+  font-family: 'Kaisei Opti', serif;
+  color: #10222B;
   text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
   margin-top: 230px;
+  margin-left: 300px;
+  margin-right: 300px;
+  border-bottom: solid 10px;
+  border-color: #95AB63;
+}
+
+div.titleline {
+  background-image: url(/img/hr-img.png);
+  background-repeat: repeat-x repeat-y; 
+  width: auto;
+  height: 11px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
  h3{
   font-size: 25px;
-  color: black;
+  font-style:italic;
+  color: #F5FFE0;
   text-align: center;
   margin-top: auto;
 }
 
 h4{
-  font-size: 25px;
-  color: black;
+  font-size: 20px;
+  font-family: 'Merienda', cursive;
+  color: #10222B;
   text-align: center;
   margin-top: auto;
+  margin-bottom: auto;
 }
 
 .card{
   flex: auto;
-  opacity: 2;
+  opacity: 0.9;
+  padding-bottom: 20px;
   background-color: #D5D8DE;
+  margin-top: auto;
   
 }
 
-/* button{
-  margin: 0 auto;
- 
-} */
+.button p {
+      color: #95AB63;
+      margin-top: 25px;
+      font-family: 'Kaisei Opti', serif;
+      text-align: center;
+}
+
+
+.button {
+      background-color: #E1F0D5;
+      margin: 0 auto;
+      margin-top: 50px;
+      height: 80px;
+      width: 200px;
+      border: none;
+      padding: .3rem 1rem;
+      
+}
