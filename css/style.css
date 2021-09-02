@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 
 iframe {
   border-style: solid;
@@ -41,3 +44,7 @@ h4{
   
 }
 
+/* button{
+  margin: 0 auto;
+ 
+} */

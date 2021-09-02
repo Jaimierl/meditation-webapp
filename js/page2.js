@@ -1,17 +1,20 @@
 'use strict';
 // global variables
-let myContainer = document.querySelector('form');
+let myContainerPage2 = document.querySelector('form');
 
-function handleSubmit(event){
+function handleSubmitPage2(event){
   event.preventDefault();
-  let userName = event.target.userName.text;
-  let userOccupation = event.target.userOccupation.text;
-  let newUser = User(userName,userOccupation);
-  console.log(`in function` + newUser);
-}
-// need to link back to app.js, received newUser not defined 
+  console.log(event.target.userName.value);
+  console.log(event.target.userOccupation.value);
+  let userName = event.target.userName.value;
+  let userOccupation = event.target.userOccupation.value;
+  let newUser = new User(userName, userOccupation);
+  console.log(newUser);
+  console.log(userArray);
+  window.location.href="page3.html";
+};
 
-console.log(`out of function` + newUser);
+// Put into Local Storage Page 2 Here!
 
 // event listener for form submit
-myContainer.addEventListener('submit', handleSubmit);
+myContainerPage2.addEventListener('submit', handleSubmitPage2);
