@@ -1,4 +1,5 @@
 'use strict';
+
 console.log("test");
 
 // Grab info from local Storage Page 2 Here to greet user by name
@@ -28,3 +29,4 @@ function handleSubmitPage3(event){
 console.log(myContainerPage3);
 // event listener for form submit
 myContainerPage3.addEventListener('submit', handleSubmitPage3);
+

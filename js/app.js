@@ -6,7 +6,7 @@ console.log('Hello World');
 let userArray = [];
 
 // User Constructor function
-function User(name,occupation,){
+function User(name,occupation){
   this.name = name;
   this.occupation = occupation;
 
