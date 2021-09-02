@@ -21,4 +21,6 @@ function Chill(time, thing, type){
   this.time = time;
   this.thing = thing;
   this.type = type;
+
+  chillArray.push(this);
 }
