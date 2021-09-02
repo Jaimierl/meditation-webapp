@@ -17,7 +17,7 @@ function handleSubmit(event){
   }
   // This is setting things from local storage as objects.
   localStorage.push(localStorageObject)
-  // After you set local storage with info you created ie. Aboce
+  // After you set local storage with info you created ie. Pull from local storage
 }
 
 switch(handleSubmit){
@@ -25,6 +25,10 @@ switch(handleSubmit){
   case localStorageObject.banana1 === 'chillin':
     localStorageObject.banana2 === 'other thing to match':
     document.write(chillVid);
+    break;
+  case localStorageObject.banana1 === 'NOOOO':
+    localStorageObject.banana2 === 'Sheeple':
+    document.write(chillVid2);
     break;
   default:
     // This is essentially an else to break the code. Put this at the end after all of your conditions.

@@ -1,11 +1,25 @@
 'use strict';
 
 // Grab info from local Storage Page 2 Here to greet user by name+ Personal Chillax
+function getUser() {
+  let potentialUser = JSON.parse(localStorage.getItem('userstorage'));
+    console.log(potentialUser);
+  
+    let userData = new User(potentialUser[0].name, potentialUser[0].occupation);
+    console.log(userData);
+}
+
+
+getUser();
+
+// Grab info from local Storage Page 3 For Personal Chillax
+
+
 
 // global variables for  5 minute videos
 
 let fiveNature =  "<iframe width='560' height='315' src='https://www.youtube.com/embed/JrQMlzvsLIU'></iframe>";
-.
+
 document.write(fiveNature);
 
 let fiveGuided = "<iframe width='560' height='315' src='https://www.youtube.com/embed/inpok4MKVLM'></iframe>";

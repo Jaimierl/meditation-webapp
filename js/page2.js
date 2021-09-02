@@ -13,28 +13,19 @@ function handleSubmitPage2(event){
   console.log(newUser);
   console.log(userArray);
   storeUser();
-  // window.location.href="page3.html";
+  window.location.href="page3.html";
 };
 
 // set to local storage
 
 function storeUser() {
+  console.log('hi');
   let stringifyUser = JSON.stringify(userArray);
-  localStorage.setItem('userstorage', stringifyUser)
-};
-
-// check if local storage
-
-function getUser() {
-  let potentialUser = localStorage.getItem('userstorage');
-  if(potentialUser){
-    let parsedUser = JSON.parse(potentialUser);
-    userArray = parsedUser;
-  }
+  localStorage.setItem('userstorage', stringifyUser);
+  console.log(stringifyUser);
 };
 
 
-console.log(userArray);
 
 // event listener for form submit
 myContainerPage2.addEventListener('submit', handleSubmitPage2);
