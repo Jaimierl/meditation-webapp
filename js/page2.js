@@ -11,7 +11,7 @@ function handleSubmitPage2(event){
   let newUser = new User(userName, userOccupation);
   console.log(newUser);
   console.log(userArray);
-  window.location.href="page3.html";
+  // window.location.href="page3.html";
 };
 
 // Put into Local Storage Page 2 Here!
