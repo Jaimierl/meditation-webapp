@@ -16,7 +16,8 @@ Author: Christine Lora, Brian Tarte, Jae Loney, Osborn Del Angel
 Links and Resources
 submission PR
 
-Any Links you used as reference
+[Mindful Dev Mag - GIF Animation](https://mindfuldevmag.com/breathing-timer/breathing-timer-gifs)
+
 Reflections and Comments
 
 Consider including the answers to your daily journal and submission questions here
