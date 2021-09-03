@@ -13,7 +13,29 @@ function getUser() {
 getUser();
 
 // Grab info from local Storage Page 3 For Personal Chillax
+let userData;
+function getUser() {
+  let potentialUser = JSON.parse(localStorage.getItem('userstorage'));
+    console.log(potentialUser);
+  
+    let userData = new User(potentialUser[0].name, potentialUser[0].occupation);
+    console.log(userData);
+  const heading = document.getElementById('greeting').innerText=`${userData.name}'s Personal Chill`;
+}
 
+getUser();
+
+// This grabs the chill thing job from local storage
+let chillData;
+function getChill() {
+  let parsedChill = JSON.parse(localStorage.getItem('chillstorage'));
+    console.log(parsedChill);
+  
+    let chillData = new Chill(parsedChill[0].time, parsedChill[0].thing, parsedChill[0].type);
+    console.log(chillData);
+}
+
+getChill();
 
 
 // global variables for  5 minute videos
@@ -54,8 +76,4 @@ document.write(fifteenLoFi);
 // switch (handle submit call will be what we look for in the switch). We do not need parenthesis here because we are looking for the return value of the function, aka which buttons were pressed. This will need to be handle submit because that is the event that puts the info into the function. Either this page or the app.js (most likely this page because it needs access to the video info/this is the time to show the videos)
 // The CASE is the condition that was met. In parenthesis.
 // After the colon is what you want to happen ie. document.write.
-// This code is WRONG but for syntax:
-// switch(handleSubmit){
-//   case (5minutes&&nature):
-  // From the radio buttons. Notice the colon here.
-  // LOOK AT THE SWITCHES PAGE!!
+
