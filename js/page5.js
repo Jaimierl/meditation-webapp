@@ -26,16 +26,18 @@ function getUser() {
 getUser();
 
 // This grabs the chill thing job from local storage
-let chillData;
+
 function getChill() {
   let parsedChill = JSON.parse(localStorage.getItem('chillstorage'));
     console.log(parsedChill);
   
     let chillData = new Chill(parsedChill[0].time, parsedChill[0].thing, parsedChill[0].type);
-    console.log(chillData);
+    
 }
 
 getChill();
+
+console.log("!!!!!!!!!!!!!!!!",chillArray[0].time);
 
 
 // global variables for  5 minute videos
