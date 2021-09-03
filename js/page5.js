@@ -38,42 +38,85 @@ function getChill() {
 getChill();
 
 console.log("!!!!!!!!!!!!!!!!",chillArray[0].time);
+console.log("!!!!!!!!!!!!!!!!",chillArray[0].type);
 
+let chillaxResult = chillArray[0].time;
+let chillaxTypeResult = chillArray[0].type; 
+
+console.log (chillaxResult);
+console.log (chillaxTypeResult);
+
+// switch (chillaxResult,chillaxTypeResult){
+//   case chillaxResult === 5:
+//      chillaxTypeResult === 'Guided';
+//     document.write(fiveNature);
+//     break;
+// };
+
+// console.log (switch(chillaxTypeResult));
 
 // global variables for  5 minute videos
 
 let fiveNature =  "<iframe width='560' height='315' src='https://www.youtube.com/embed/JrQMlzvsLIU'></iframe>";
 
-document.write(fiveNature);
+let fiveLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/ER9qZS6IJQM'></iframe>";
 
 let fiveGuided = "<iframe width='560' height='315' src='https://www.youtube.com/embed/inpok4MKVLM'></iframe>";
 
-document.write(fiveGuided);
-
-let fiveLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/ER9qZS6IJQM'></iframe>";
-document.write(fiveLoFi);
 
 // global variables for 10 minute videos
 
 let tenNature = "<iframe width='560' height='315' src='https://www.youtube.com/embed/4hXYRXaJdtk'></iframe>";
-document.write(tenNature);
+
 
 let tenGuided = "<iframe width='560' height='315' src='https://www.youtube.com/embed/ez3GgRqhNvA'></iframe>";
-document.write(tenGuided);
+
 
 let tenLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/_0lQw595WiQ'></iframe>";
-document.write(tenLoFi);
+
 
 // global variables for 15 minute videos
 
 let fifteenNature = "<iframe width='560' height='315' src='https://www.youtube.com/embed/IXN7GGr0pFI'></iframe>";
-document.write(fifteenNature);
+
 
 let fifteenGuided = "<iframe width='560' height='315' src='https://www.youtube.com/embed/W8a3T8pI9Ns'></iframe>";
-document.write(fifteenGuided);
+
 
 let fifteenLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/XPkHUvg4-ts'></iframe>";
-document.write(fifteenLoFi);
+
+
+
+function renderVideo(){
+  if (chillaxResult === '5' && chillaxTypeResult === 'Guided'){
+    document.write(fiveGuided);
+  } else if (chillaxResult === '5' && chillaxTypeResult === 'Nature'){
+    document.write(fiveNature); 
+  } else if (chillaxResult === '5' && chillaxTypeResult === 'LoFi'){
+    document.write(fiveLoFi); 
+  }  else if (chillaxResult === '10' && chillaxTypeResult === 'LoFi'){
+    document.write(tenLoFi); 
+  } else if (chillaxResult === '10' && chillaxTypeResult === 'Nature'){
+    document.write(tenNature); 
+  } else if (chillaxResult === '10' && chillaxTypeResult === 'Guided'){
+    document.write(tenGuided); 
+  } else if (chillaxResult === '15' && chillaxTypeResult === 'LoFi'){
+    document.write(fifteenLoFi); 
+  } else if (chillaxResult === '15' && chillaxTypeResult === 'Guided'){
+    document.write(fifteenGuided); 
+  } else if (chillaxResult === '15' && chillaxTypeResult === 'Nature'){
+    document.write(fifteenNature); 
+  } else {
+    alert("MALFUNCTION!")
+  }
+};
+
+renderVideo();
+
+//  let testVideo = document.getElementById('chillaxVid');
+//  testVideo.innerHTML = video;
+
+
 
 // switch (handle submit call will be what we look for in the switch). We do not need parenthesis here because we are looking for the return value of the function, aka which buttons were pressed. This will need to be handle submit because that is the event that puts the info into the function. Either this page or the app.js (most likely this page because it needs access to the video info/this is the time to show the videos)
 // The CASE is the condition that was met. In parenthesis.

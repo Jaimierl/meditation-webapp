@@ -15,12 +15,14 @@ nav {
   width: 960px;
   display: flex;
   justify-content: center;
+  justify-content: flex-start;
+  padding-top: 3px;
   
 }
 
 nav ul {
     display: flex;
-    align-items:right;
+    
   }
 
 nav ul li a {
@@ -156,4 +158,16 @@ article {
 header {
   background-color: #10222B;opacity: 0.6;
   height: 25px;
+}
+
+iframe {
+  box-shadow: 0 0 50px #95AB63;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+#iframe {
+  display: flex;
+  flex-direction: column;
 }
