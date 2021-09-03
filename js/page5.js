@@ -35,28 +35,27 @@ let tenNature = "<iframe width='560' height='315' src='https://www.youtube.com/e
 document.write(tenNature);
 
 let tenGuided = "<iframe width='560' height='315' src='https://www.youtube.com/embed/ez3GgRqhNvA'></iframe>";
-document.write(tenGuided.video.value);
+document.write(tenGuided);
 
 let tenLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/_0lQw595WiQ'></iframe>";
-document.write(tenLoFi.video.value);
+document.write(tenLoFi);
 
 // global variables for 15 minute videos
 
 let fifteenNature = "<iframe width='560' height='315' src='https://www.youtube.com/embed/IXN7GGr0pFI'></iframe>";
-document.write(fifteenNature.video.value);
+document.write(fifteenNature);
 
 let fifteenGuided = "<iframe width='560' height='315' src='https://www.youtube.com/embed/W8a3T8pI9Ns'></iframe>";
-document.write(fifteenGuided.video.value);
+document.write(fifteenGuided);
 
 let fifteenLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/XPkHUvg4-ts'></iframe>";
-document.write(fifteenLoFi.video.value);
+document.write(fifteenLoFi);
 
 // switch (handle submit call will be what we look for in the switch). We do not need parenthesis here because we are looking for the return value of the function, aka which buttons were pressed. This will need to be handle submit because that is the event that puts the info into the function. Either this page or the app.js (most likely this page because it needs access to the video info/this is the time to show the videos)
 // The CASE is the condition that was met. In parenthesis.
 // After the colon is what you want to happen ie. document.write.
 // This code is WRONG but for syntax:
-switch(handleSubmit){
-  case (5minutes&&nature):
+// switch(handleSubmit){
+//   case (5minutes&&nature):
   // From the radio buttons. Notice the colon here.
   // LOOK AT THE SWITCHES PAGE!!
-}

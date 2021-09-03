@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 
 /* Color Theme Swatches in Hex 
 .zen-and-tea-1-hex { color: #10222B; }
@@ -6,33 +9,13 @@
 .zen-and-tea-4-hex { color: #E1F0D5; }
 .zen-and-tea-5-hex { color: #F5FFE0; }*/
 
-*{
-  box-sizing: border-box;
-}
-
-nav {
-  margin: 0 auto;
-  width: 960px;
-  display: flex;
-  justify-content: center;
-  
-}
-
-nav ul {
-    display: flex;
-    align-items:center;
-  }
-
-nav ul li a {
-  padding: 1rem;
-  text-decoration: none;
-  font-family: 'Kaisei Opti', serif;
-  font-size: 18px;
-  color: #10222B;
-}
 
 body {
-  background-color: #E1F0D5;
+  background-image: url(/img/meditation-sitdown.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1{
@@ -40,23 +23,27 @@ h1{
   font-family: 'Kaisei Opti', serif;
   color: #10222B;
   text-align: center;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   padding-top: 10px;
-  
+  margin-top: 230px;
   margin-left: 300px;
   margin-right: 300px;
   border-bottom: solid 10px;
   border-color: #95AB63;
 }
 
+h1 span {
+  font-size:25px;
+}
 
- h3{
+/* h3{
   font-size: 25px;
   font-style:italic;
   color: #F5FFE0;
   text-align: center;
-  margin-top: auto;
-}
+  margin: 10px;
+ 
+} */
 
 h4{
   font-size: 20px;
@@ -67,17 +54,34 @@ h4{
   margin-bottom: auto;
 }
 
+.card{
+  flex: auto;
+  opacity: 0.9;
+  padding-bottom: 20px;
+  background-color: #D5D8DE;
+  margin-top: auto;
+  
+}
+
+.button {
+      color: #95AB63;
+      margin-top: 25px;
+      font-family: 'Kaisei Opti', serif;
+      text-align: center;
+      margin: 0 auto;
+      
+}
 
 button {
-      background-color:#95AB63;
-      color: #E1F0D5;
-      border-style:hidden;
-      border-radius: 10px;
-      margin: 0 auto;
+      background-color: #E1F0D5;
       margin-top: 50px;
       height: 80px;
       width: 200px;
       border: none;
+      border-radius: 10px;
       padding: .3rem 1rem;
-      
+      text-decoration: none;
+      color: #95AB63;
+      margin-top: 25px;
+      font-family: 'Kaisei Opti', serif;
 }

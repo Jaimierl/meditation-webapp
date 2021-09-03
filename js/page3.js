@@ -50,13 +50,3 @@ function getUser() {
 
 getUser();
 
-// function greetUser(){
-//   const heading = document.getElementById('greeting').innerText=`Hello ${User.name}`;
-//   console.log(userData);
-//   console.log(User);
-//   // let message = document.createElement('h1');
-//   // // message.textContent = `Hello ${User.name}`;
-//   // heading.appendChild(message);
-// }
-
-// greetUser()
