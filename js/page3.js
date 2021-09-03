@@ -38,13 +38,25 @@ myContainerPage3.addEventListener('submit', handleSubmitPage3);
 
 // check if local storage - Grab from local storage
 
+let userData;
 function getUser() {
   let potentialUser = JSON.parse(localStorage.getItem('userstorage'));
     console.log(potentialUser);
   
     let userData = new User(potentialUser[0].name, potentialUser[0].occupation);
     console.log(userData);
+  const heading = document.getElementById('greeting').innerText=`Hello ${userData.name}`;
 }
 
-
 getUser();
+
+// function greetUser(){
+//   const heading = document.getElementById('greeting').innerText=`Hello ${User.name}`;
+//   console.log(userData);
+//   console.log(User);
+//   // let message = document.createElement('h1');
+//   // // message.textContent = `Hello ${User.name}`;
+//   // heading.appendChild(message);
+// }
+
+// greetUser()
