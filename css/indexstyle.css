@@ -23,11 +23,9 @@ h1{
   font-family: 'Kaisei Opti', serif;
   color: #10222B;
   text-align: center;
-  /* padding-bottom: 10px; */
   padding-top: 10px;
-  margin-top: 230px;
-  margin-left: 300px;
-  margin-right: 300px;
+  line-height:80%;
+  margin-top: 10rem;
   border-bottom: solid 10px;
   border-color: #95AB63;
 }
@@ -35,15 +33,6 @@ h1{
 h1 span {
   font-size:25px;
 }
-
-/* h3{
-  font-size: 25px;
-  font-style:italic;
-  color: #F5FFE0;
-  text-align: center;
-  margin: 10px;
- 
-} */
 
 h4{
   font-size: 20px;

@@ -57,11 +57,11 @@ console.log (chillaxTypeResult);
 
 // global variables for  5 minute videos
 
-let fiveNature =  "<iframe width='560' height='315' src='https://www.youtube.com/embed/JrQMlzvsLIU'></iframe>";
+let fiveNature =  "<iframe width='560' height='315' src='https://www.youtube.com/embed/JrQMlzvsLIU?autoplay=1&mute=1' allow='autoplay'></iframe>";
 
-let fiveLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/ER9qZS6IJQM'></iframe>";
+let fiveLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/ER9qZS6IJQM?autoplay=1&mute=1'allow='autoplay'></iframe>";
 
-let fiveGuided = "<iframe width='560' height='315' src='https://www.youtube.com/embed/inpok4MKVLM'></iframe>";
+let fiveGuided = "<iframe width='560' height='315' src='https://www.youtube.com/embed/inpok4MKVLM?autoplay=1&mute=1'allow='autoplay'></iframe>";
 
 
 // global variables for 10 minute videos
@@ -85,14 +85,15 @@ let fifteenGuided = "<iframe width='560' height='315' src='https://www.youtube.c
 
 let fifteenLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/XPkHUvg4-ts'></iframe>";
 
-
-
 function renderVideo(){
   if (chillaxResult === '5' && chillaxTypeResult === 'Guided'){
+    console.log(fiveGuided);
     document.write(fiveGuided);
   } else if (chillaxResult === '5' && chillaxTypeResult === 'Nature'){
+    console.log(fiveNature);
     document.write(fiveNature); 
   } else if (chillaxResult === '5' && chillaxTypeResult === 'LoFi'){
+    console.log(fiveLoFi);
     document.write(fiveLoFi); 
   }  else if (chillaxResult === '10' && chillaxTypeResult === 'LoFi'){
     document.write(tenLoFi); 
@@ -107,18 +108,66 @@ function renderVideo(){
   } else if (chillaxResult === '15' && chillaxTypeResult === 'Nature'){
     document.write(fifteenNature); 
   } else {
-    alert("MALFUNCTION!")
+    alert("Chill Your Own Way!")
   }
 };
 
 renderVideo();
 
+// let vid;
+// switch (chillaxResult,chillaxTypeResult){
+//   case '5','Guided':
+//     vid = fiveGuided;
+//     break;
+// }
+// let onscreen =document.getElementById('playVideo');
+// onscreen.append = vid;
+
+
+// function renderVideo() {
+//   // Trying to render a message the playVideo div, Code not working.
+//   var age = prompt("How old are you?"),
+//       // Get a reference to the element we want to update
+//       el = document.getElementById('playVideo', message);
+
+//   // Check the age and set the message variable based on that
+//   if (age >= 18) {
+//       message = "Let's get started then!";
+//   } else {
+//       message = "You're under 18? Be careful out there....";
+//   }
+//   // Update the content of the element with the message
+//   el.innerHTML = message;
+// }
+
+// renderVideo();
+
+
 //  let testVideo = document.getElementById('chillaxVid');
 //  testVideo.innerHTML = video;
 
 
-
-// switch (handle submit call will be what we look for in the switch). We do not need parenthesis here because we are looking for the return value of the function, aka which buttons were pressed. This will need to be handle submit because that is the event that puts the info into the function. Either this page or the app.js (most likely this page because it needs access to the video info/this is the time to show the videos)
-// The CASE is the condition that was met. In parenthesis.
-// After the colon is what you want to happen ie. document.write.
-
+// function onYouTubeIframeAPIReady() {
+//   var player;
+//   player = new YT.Player('muteYouTubeVideoPlayer', {
+//     videoId: 'YOUR_VIDEO_ID', // YouTube Video ID
+//     width: 560,               // Player width (in px)
+//     height: 316,              // Player height (in px)
+//     playerVars: {
+//       autoplay: 1,        // Auto-play the video on load
+//       controls: 1,        // Show pause/play buttons in player
+//       showinfo: 0,        // Hide the video title
+//       modestbranding: 1,  // Hide the Youtube Logo
+//       loop: 1,            // Run the video in a loop
+//       fs: 0,              // Hide the full screen button
+//       cc_load_policy: 0, // Hide closed captions
+//       iv_load_policy: 3,  // Hide the Video Annotations
+//       autohide: 0         // Hide video controls when playing
+//     },
+//     events: {
+//       onReady: function(e) {
+//         e.target.mute();
+//       }
+//     }
+//   });
+//  }
