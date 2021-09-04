@@ -46,72 +46,100 @@ let chillaxTypeResult = chillArray[0].type;
 console.log (chillaxResult);
 console.log (chillaxTypeResult);
 
-// switch (chillaxResult,chillaxTypeResult){
-//   case chillaxResult === 5:
-//      chillaxTypeResult === 'Guided';
-//     document.write(fiveNature);
-//     break;
-// };
-
-// console.log (switch(chillaxTypeResult));
-
 // global variables for  5 minute videos
 
-let fiveNature =  "<iframe width='560' height='315' src='https://www.youtube.com/embed/JrQMlzvsLIU'></iframe>";
+let fiveNature = "<iframe width='560' height='315' src='https://www.youtube.com/embed/JrQMlzvsLIU?&autoplay=1'></iframe>";
 
 let fiveLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/ER9qZS6IJQM'></iframe>";
 
 let fiveGuided = "<iframe width='560' height='315' src='https://www.youtube.com/embed/inpok4MKVLM'></iframe>";
 
-
 // global variables for 10 minute videos
 
 let tenNature = "<iframe width='560' height='315' src='https://www.youtube.com/embed/4hXYRXaJdtk'></iframe>";
 
-
 let tenGuided = "<iframe width='560' height='315' src='https://www.youtube.com/embed/ez3GgRqhNvA'></iframe>";
 
-
 let tenLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/_0lQw595WiQ'></iframe>";
-
 
 // global variables for 15 minute videos
 
 let fifteenNature = "<iframe width='560' height='315' src='https://www.youtube.com/embed/IXN7GGr0pFI'></iframe>";
 
-
 let fifteenGuided = "<iframe width='560' height='315' src='https://www.youtube.com/embed/W8a3T8pI9Ns'></iframe>";
-
 
 let fifteenLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/XPkHUvg4-ts'></iframe>";
 
+// function that renders video based on user selections
+// function renderVideo(){
+//   if (chillaxResult === '5' && chillaxTypeResult === 'Guided'){
+//     document.write(fiveGuided);
+//   } else if (chillaxResult === '5' && chillaxTypeResult === 'Nature'){
+//     document.write(fiveNature); 
+//   } else if (chillaxResult === '5' && chillaxTypeResult === 'LoFi'){
+//     document.write(fiveLoFi); 
+//   }  else if (chillaxResult === '10' && chillaxTypeResult === 'LoFi'){
+//     document.write(tenLoFi); 
+//   } else if (chillaxResult === '10' && chillaxTypeResult === 'Nature'){
+//     document.write(tenNature); 
+//   } else if (chillaxResult === '10' && chillaxTypeResult === 'Guided'){
+//     document.write(tenGuided); 
+//   } else if (chillaxResult === '15' && chillaxTypeResult === 'LoFi'){
+//     document.write(fifteenLoFi); 
+//   } else if (chillaxResult === '15' && chillaxTypeResult === 'Guided'){
+//     document.write(fifteenGuided); 
+//   } else if (chillaxResult === '15' && chillaxTypeResult === 'Nature'){
+//     document.write(fifteenNature); 
+//   } else {
+//     alert("MALFUNCTION!")
+//   }
+// };
 
+// renderVideo();
+let vidSwitch = [];
 
-function renderVideo(){
-  if (chillaxResult === '5' && chillaxTypeResult === 'Guided'){
+function vidTestSwitch(){
+  vidSwitch.push(chillaxResult);
+  vidSwitch.push(chillaxTypeResult);
+}
+
+vidTestSwitch();
+console.log(vidSwitch[0]);
+
+function switchTest(){
+switch (chillaxResult && chillaxTypeResult){
+  case ('5' && 'Nature'):
+    document.write(fiveNature);
+    break;
+  case ('5' && 'Guided'):
     document.write(fiveGuided);
-  } else if (chillaxResult === '5' && chillaxTypeResult === 'Nature'){
-    document.write(fiveNature); 
-  } else if (chillaxResult === '5' && chillaxTypeResult === 'LoFi'){
-    document.write(fiveLoFi); 
-  }  else if (chillaxResult === '10' && chillaxTypeResult === 'LoFi'){
-    document.write(tenLoFi); 
-  } else if (chillaxResult === '10' && chillaxTypeResult === 'Nature'){
-    document.write(tenNature); 
-  } else if (chillaxResult === '10' && chillaxTypeResult === 'Guided'){
-    document.write(tenGuided); 
-  } else if (chillaxResult === '15' && chillaxTypeResult === 'LoFi'){
-    document.write(fifteenLoFi); 
-  } else if (chillaxResult === '15' && chillaxTypeResult === 'Guided'){
-    document.write(fifteenGuided); 
-  } else if (chillaxResult === '15' && chillaxTypeResult === 'Nature'){
-    document.write(fifteenNature); 
-  } else {
-    alert("MALFUNCTION!")
-  }
+    break;
+  case ('5' && 'LoFi'):
+    document.write(fiveLoFi);
+    break;
+  case ('10' && 'Nature'):
+      document.write(tenNature);
+      break;
+  case ('10' && 'Guided'):
+      document.write(tenGuided);
+      break;
+  case ('10' && 'LoFi'):
+      document.write(tenLoFi);
+      break;
+  case ('15' && 'Nature'):
+      document.write(fifteenNature);
+        break;
+  case ('15' && 'Guided'):
+      document.write(fifteenGuided);
+        break;
+  case ('15'&& 'LoFi'):
+      document.write(fifteenLoFi);
+        break;
+};
 };
 
-renderVideo();
+switchTest();
+
 
 //  let testVideo = document.getElementById('chillaxVid');
 //  testVideo.innerHTML = video;
