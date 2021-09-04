@@ -66,7 +66,11 @@ let fifteenGuided = "<iframe width='560' height='315' src='https://www.youtube.c
 let fifteenLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/XPkHUvg4-ts'></iframe>";
 
 
+
+let vidSwitch = [];
+
 // global variable that combines both array results into single string for evaluation in switch statement
+
 
 let switchTestVid = chillaxResult + chillaxTypeResult;
 
@@ -104,5 +108,4 @@ switch (switchTestVid){
       alert('Find your own chill!');
         break;
 };
-
 
