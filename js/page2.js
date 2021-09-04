@@ -2,6 +2,7 @@
 // global variables
 let myContainerPage2 = document.querySelector('form');
 
+// submits form and renders to local storage
 function handleSubmitPage2(event){
   event.preventDefault();
 

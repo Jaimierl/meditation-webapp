@@ -182,3 +182,11 @@ iframe {
   display: flex;
   flex-direction: column;
 }
+
+input {
+  margin: 5px;
+}
+
+fieldset p {
+  margin: 5px;
+}

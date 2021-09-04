@@ -7,8 +7,7 @@ function getUser() {
   
     let userData = new User(potentialUser[0].name, potentialUser[0].occupation);
     console.log(userData);
-}
-
+};
 
 getUser();
 
@@ -21,7 +20,7 @@ function getUser() {
     let userData = new User(potentialUser[0].name, potentialUser[0].occupation);
     console.log(userData);
   const heading = document.getElementById('greeting').innerText=`${userData.name}'s Personal Chill`;
-}
+};
 
 getUser();
 
@@ -33,26 +32,22 @@ function getChill() {
   
     let chillData = new Chill(parsedChill[0].time, parsedChill[0].thing, parsedChill[0].type);
     
-}
+};
 
 getChill();
 
-console.log("!!!!!!!!!!!!!!!!",chillArray[0].time);
-console.log("!!!!!!!!!!!!!!!!",chillArray[0].type);
+// global variables targeting the time and type of meditation based on the user's answers
 
 let chillaxResult = chillArray[0].time;
-let chillaxTypeResult = chillArray[0].type; 
-
-console.log (chillaxResult);
-console.log (chillaxTypeResult);
+let chillaxTypeResult = chillArray[0].type;
 
 // global variables for  5 minute videos
 
 let fiveNature = "<iframe width='560' height='315' src='https://www.youtube.com/embed/JrQMlzvsLIU?&autoplay=1'></iframe>";
 
-let fiveLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/ER9qZS6IJQM?autoplay=1&mute=1'allow='autoplay'></iframe>";
+let fiveLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/ER9qZS6IJQM'></iframe>";
 
-let fiveGuided = "<iframe width='560' height='315' src='https://www.youtube.com/embed/inpok4MKVLM?autoplay=1&mute=1'allow='autoplay'></iframe>";
+let fiveGuided = "<iframe width='560' height='315' src='https://www.youtube.com/embed/inpok4MKVLM'></iframe>";
 
 // global variables for 10 minute videos
 
@@ -71,45 +66,45 @@ let fifteenGuided = "<iframe width='560' height='315' src='https://www.youtube.c
 let fifteenLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/XPkHUvg4-ts'></iframe>";
 
 
+
 let vidSwitch = [];
 
-function vidTestSwitch(){
-  vidSwitch.push(chillaxResult);
-  vidSwitch.push(chillaxTypeResult);
-}
+// global variable that combines both array results into single string for evaluation in switch statement
 
-vidTestSwitch();
-console.log(vidSwitch[0]);
 
-function switchTest(){
-switch (chillaxResult && chillaxTypeResult){
-  case ('5' && 'Nature'):
+let switchTestVid = chillaxResult + chillaxTypeResult;
+
+// switch statement that renders videos to page
+
+switch (switchTestVid){
+  case '5Nature':
     document.write(fiveNature);
     break;
-  case ('5' && 'Guided'):
+  case '5Guided':
     document.write(fiveGuided);
     break;
-  case ('5' && 'LoFi'):
+  case '5LoFi':
     document.write(fiveLoFi);
     break;
-  case ('10' && 'Nature'):
+  case '10Nature':
       document.write(tenNature);
       break;
-  case ('10' && 'Guided'):
+  case '10Guided':
       document.write(tenGuided);
       break;
-  case ('10' && 'LoFi'):
+  case '10LoFi':
       document.write(tenLoFi);
       break;
-  case ('15' && 'Nature'):
+  case '15Nature':
       document.write(fifteenNature);
         break;
-  case ('15' && 'Guided'):
+  case '15Guided':
       document.write(fifteenGuided);
         break;
-  case ('15'&& 'LoFi'):
+  case '15LoFi':
       document.write(fifteenLoFi);
         break;
+  default:
+      alert('Find your own chill!');
+        break;
 };
-
-switchTest();

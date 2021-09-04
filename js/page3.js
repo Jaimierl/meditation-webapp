@@ -5,6 +5,7 @@ console.log('test');
 // global variables
 let myContainerPage3 = document.querySelector('form');
 
+// submits form and renders to local storage
 function handleSubmitPage3(event){
   event.preventDefault();
   console.log('ConsoleLog1' , event.target.relaxTime.value);

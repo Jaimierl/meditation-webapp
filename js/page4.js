@@ -26,10 +26,5 @@ function getChill() {
     const heading = document.getElementById('thinggreeting').innerText=`Grab your ${chillData.thing} and take a moment out of your day to calm your mind and relax. `;
 }
 
-
 getChill();
 
-// // This will also need to be on page 5 (WITH THE FUNCTION CALL!!!). It is just here currently for ease of reading.
-
-
-// CSS Animation - Page 4 Specific CSS File?
