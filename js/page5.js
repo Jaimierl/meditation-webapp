@@ -108,3 +108,4 @@ switch (switchTestVid){
       alert('Find your own chill!');
         break;
 };
+
