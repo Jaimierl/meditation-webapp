@@ -1,0 +1,137 @@
+
+/* Color Theme Swatches in Hex 
+.zen-and-tea-1-hex { color: #10222B; }
+.zen-and-tea-2-hex { color: #95AB63; }
+.zen-and-tea-3-hex { color: #BCD685; }
+.zen-and-tea-4-hex { color: #E1F0D5; }
+.zen-and-tea-5-hex { color: #F5FFE0; }*/
+
+*{
+    box-sizing: border-box;
+  }
+  
+  nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+    
+  }
+  
+  nav ul {
+      display: flex;
+      
+    }
+  
+  nav ul li a {
+    padding: 1rem;
+    text-decoration: none;
+    font-family: 'Kaisei Opti', serif;
+    font-size: 18px;
+    color:#E1F0D5;
+  }
+  
+  body {
+    background-color: #E1F0D5; 
+  }
+  
+  h1{
+    font-size: 50px;
+    font-family: 'Kaisei Opti', serif;
+    color: #10222B;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0 20rem;
+    border-bottom: solid 10px;
+    border-color: #95AB63;
+  }
+  
+  
+   h3{
+    font-size: 25px;
+    font-style:italic;
+    color: #F5FFE0;
+    text-align: center;
+    margin-top: auto;
+  }
+  
+  h4{
+    font-size: 20px;
+    font-family: 'Merienda', cursive;
+    color: #10222B;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+ 
+  h2{
+    font-family: 'Kaisei Opti', serif;
+    font-style: bolder;
+    text-align: center;
+    font-size: 2rem;
+    margin:1rem;
+  }
+ 
+  
+  footer {
+    font-size: 40px;
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    float:right;
+  }
+  
+  .quotation {
+    font-size: 100px;
+    line-height:80%;
+    }
+  
+  
+  img {
+    border-radius: 50%;
+    box-shadow: 0 0 50px #95AB63;
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    /* float: left;
+    clear: left; */
+    
+  }
+  main {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  article {
+    font-family: 'Kaisei Opti', serif;
+    font-style: bolder;
+    text-align: center;
+    font-size: 2rem;
+    line-height:150%;
+  }
+  
+  header {
+    background-color: #10222B;opacity: 0.6;
+    height: 25px;
+  }
+
+  
+  div {
+      
+      /* width: 50%; */
+      
+  }
+  div #name{
+    /* float: right; */
+
+  }
+  div #headshot{
+    margin: 25px;
+    /* flex-direction: row;
+    justify-content: center; */
+  }
