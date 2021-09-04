@@ -14,7 +14,7 @@ function handleSubmitPage3(event){
  
 
   let timeAnswer = event.target.relaxTime.value;
-  let thingAnswer = event.target.relaxObject.value;
+  let thingAnswer = event.target.relaxObject.value.toLowerCase();
   let typeAnswer = event.target.relaxType.value;
   
   let newChillax = new Chill(timeAnswer, thingAnswer, typeAnswer);

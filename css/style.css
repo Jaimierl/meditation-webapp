@@ -1,4 +1,3 @@
-
 /* Color Theme Swatches in Hex 
 .zen-and-tea-1-hex { color: #10222B; }
 .zen-and-tea-2-hex { color: #95AB63; }
@@ -15,13 +14,11 @@ nav {
   display: flex;
   justify-content: center;
   padding-top: 3px;
-  
 }
 
 nav ul {
     display: flex;
-    
-  }
+}
 
 nav ul li a {
   padding: 1rem;
@@ -47,6 +44,13 @@ h1{
   border-color: #95AB63;
 }
 
+h2{
+  font-family: 'Kaisei Opti', serif;
+  font-style: bolder;
+  text-align: center;
+  font-size: 2rem;
+  margin:1rem;
+}
 
  h3{
   font-size: 25px;
@@ -93,14 +97,6 @@ button:hover {
   cursor: pointer;
 }
 
-h2{
-  font-family: 'Kaisei Opti', serif;
-  font-style: bolder;
-  text-align: center;
-  font-size: 2rem;
-  margin:1rem;
-}
-
 fieldset {
   text-align: center;
   font-family: 'Kaisei Opti', serif;
@@ -119,18 +115,24 @@ fieldset #name {
 }
 
 footer {
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Space Grotesk', sans-serif;
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 25rem;
+  width: 33rem;
   float:right;
+  margin-right:3rem;
+  padding:15px;
+  background: #95AB63;
+  border-radius: 5px;
+  opacity: 75%;
 }
 
-.quotation {
-  font-size: 100px;
-  line-height:80%;
+.quote {
+  font-size: 75px;
+  line-height:10%;
+  margin-bottom:0;
   }
 
 
@@ -139,7 +141,7 @@ img {
   box-shadow: 0 0 50px #95AB63;
   width: 200px;
   height: 200px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 #breathe {
@@ -160,7 +162,7 @@ article {
   font-family: 'Kaisei Opti', serif;
   font-style: bolder;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height:150%;
 }
 

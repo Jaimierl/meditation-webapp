@@ -66,7 +66,11 @@ let fifteenGuided = "<iframe width='560' height='315' src='https://www.youtube.c
 let fifteenLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/XPkHUvg4-ts'></iframe>";
 
 
+
+let vidSwitch = [];
+
 // global variable that combines both array results into single string for evaluation in switch statement
+
 
 let switchTestVid = chillaxResult + chillaxTypeResult;
 
@@ -104,31 +108,3 @@ switch (switchTestVid){
       alert('Find your own chill!');
         break;
 };
-
-
-// function that renders video based on user selections - backup if switch breaks
-// function renderVideo(){
-//   if (chillaxResult === '5' && chillaxTypeResult === 'Guided'){
-//     document.write(fiveGuided);
-//   } else if (chillaxResult === '5' && chillaxTypeResult === 'Nature'){
-//     document.write(fiveNature); 
-//   } else if (chillaxResult === '5' && chillaxTypeResult === 'LoFi'){
-//     document.write(fiveLoFi); 
-//   }  else if (chillaxResult === '10' && chillaxTypeResult === 'LoFi'){
-//     document.write(tenLoFi); 
-//   } else if (chillaxResult === '10' && chillaxTypeResult === 'Nature'){
-//     document.write(tenNature); 
-//   } else if (chillaxResult === '10' && chillaxTypeResult === 'Guided'){
-//     document.write(tenGuided); 
-//   } else if (chillaxResult === '15' && chillaxTypeResult === 'LoFi'){
-//     document.write(fifteenLoFi); 
-//   } else if (chillaxResult === '15' && chillaxTypeResult === 'Guided'){
-//     document.write(fifteenGuided); 
-//   } else if (chillaxResult === '15' && chillaxTypeResult === 'Nature'){
-//     document.write(fifteenNature); 
-//   } else {
-//     alert("MALFUNCTION!")
-//   }
-// };
-
-// renderVideo();
