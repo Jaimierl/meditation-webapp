@@ -106,29 +106,3 @@ switch (switchTestVid){
 };
 
 
-// function that renders video based on user selections - backup if switch breaks
-// function renderVideo(){
-//   if (chillaxResult === '5' && chillaxTypeResult === 'Guided'){
-//     document.write(fiveGuided);
-//   } else if (chillaxResult === '5' && chillaxTypeResult === 'Nature'){
-//     document.write(fiveNature); 
-//   } else if (chillaxResult === '5' && chillaxTypeResult === 'LoFi'){
-//     document.write(fiveLoFi); 
-//   }  else if (chillaxResult === '10' && chillaxTypeResult === 'LoFi'){
-//     document.write(tenLoFi); 
-//   } else if (chillaxResult === '10' && chillaxTypeResult === 'Nature'){
-//     document.write(tenNature); 
-//   } else if (chillaxResult === '10' && chillaxTypeResult === 'Guided'){
-//     document.write(tenGuided); 
-//   } else if (chillaxResult === '15' && chillaxTypeResult === 'LoFi'){
-//     document.write(fifteenLoFi); 
-//   } else if (chillaxResult === '15' && chillaxTypeResult === 'Guided'){
-//     document.write(fifteenGuided); 
-//   } else if (chillaxResult === '15' && chillaxTypeResult === 'Nature'){
-//     document.write(fifteenNature); 
-//   } else {
-//     alert("MALFUNCTION!")
-//   }
-// };
-
-// renderVideo();

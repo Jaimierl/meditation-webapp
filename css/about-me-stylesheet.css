@@ -26,7 +26,7 @@
   nav ul li a {
     padding: 1rem;
     text-decoration: none;
-    font-family: 'Kaisei Opti', serif;
+    font-family: 'Questrial', sans-serif;
     font-size: 18px;
     color:#E1F0D5;
   }
@@ -37,7 +37,7 @@
   
   h1{
     font-size: 50px;
-    font-family: 'Kaisei Opti', serif;
+    font-family: 'Playfair Display', serif;
     color: #10222B;
     text-align: center;
     padding-bottom: 10px;
@@ -50,7 +50,7 @@
   
    h3{
     font-size: 25px;
-    font-style:italic;
+    font-family: 'Playfair Display', serif;
     color: #F5FFE0;
     text-align: center;
     margin-top: auto;
@@ -58,7 +58,7 @@
   
   h4{
     font-size: 20px;
-    font-family: 'Merienda', cursive;
+    font-family: 'Playfair Display', serif;
     color: #10222B;
     text-align: center;
     margin-top: auto;
@@ -66,7 +66,7 @@
   }
  
   h2{
-    font-family: 'Kaisei Opti', serif;
+    font-family: 'Playfair Display', serif;
     font-style: bolder;
     text-align: center;
     font-size: 2rem;
@@ -76,7 +76,7 @@
   
   footer {
     font-size: 40px;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Questrial', sans-serif;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -108,7 +108,7 @@
   }
   
   article {
-    font-family: 'Kaisei Opti', serif;
+    font-family: 'Questrial', sans-serif;
     font-style: bolder;
     text-align: center;
     font-size: 2rem;

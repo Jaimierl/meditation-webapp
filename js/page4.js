@@ -10,7 +10,7 @@ function getUser() {
   
     let userData = new User(potentialUser[0].name, potentialUser[0].occupation);
     console.log(userData);
-  const heading = document.getElementById('jobgreeting').innerText=`Being a ${userData.occupation} can be stressful at times.`;
+  const heading = document.getElementById('jobgreeting').innerText=`Being in ${userData.occupation} can be stressful at times.`;
 }
 
 getUser();

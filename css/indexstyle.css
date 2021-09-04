@@ -20,26 +20,23 @@ body {
 
 h1{
   font-size: 50px;
-  font-family: 'Kaisei Opti', serif;
+  font-family: 'Playfair Display', serif;
   color: #10222B;
   text-align: center;
   padding-top: 10px;
-  line-height:80%;
-  margin-top: 10rem;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: auto;
   border-bottom: solid 10px;
   border-color: #95AB63;
 }
 
-h1 span {
-  font-size:25px;
-}
-
 h4{
-  font-size: 20px;
-  font-family: 'Merienda', cursive;
+  font-size: 16.5px;
+  font-family: 'Questrial', sans-serif;
   color: #10222B;
   text-align: center;
-  margin-top: 6px;
+  margin-top: 10px;
   margin-bottom: auto;
 }
 
@@ -48,30 +45,57 @@ h4{
   opacity: 0.9;
   padding-bottom: 20px;
   background-color: #D5D8DE;
-  margin-top: auto;
+  margin-top: 20rem;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.buttondiv {
+  margin-top: 25px;
+  font-family: 'Questrial', sans-serif;
+  text-align: center;
+  margin: 0 auto;
   
 }
 
 .button {
-      color: #95AB63;
-      margin-top: 25px;
-      font-family: 'Kaisei Opti', serif;
-      text-align: center;
-      margin: 0 auto;
-      
+  background-color: #95AB63;
+  margin-top: 50px;
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  padding: .3rem 1rem;
+  text-decoration: none;
+  color: #F5FFE0;
+  margin-top: 25px;
+  font-family: 'Questrial', sans-serif;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
-button {
-      background-color: #E1F0D5;
-      margin-top: 50px;
-      height: 80px;
-      width: 200px;
-      border: none;
-      border-radius: 10px;
-      padding: .3rem 1rem;
-      text-decoration: none;
-      color: #95AB63;
-      margin-top: 25px;
-      font-family: 'Kaisei Opti', serif;
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
