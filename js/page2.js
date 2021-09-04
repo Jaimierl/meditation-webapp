@@ -8,7 +8,7 @@ function handleSubmitPage2(event){
   console.log(event.target.userName.value);
   console.log(event.target.userOccupation.value);
   let userName = event.target.userName.value;
-  let userOccupation = event.target.userOccupation.value;
+  let userOccupation = event.target.userOccupation.value.toLowerCase();
   let newUser = new User(userName, userOccupation);
   console.log(newUser);
   console.log(userArray);

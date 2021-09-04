@@ -56,7 +56,11 @@
     margin:1rem;
   }
  
-  
+  header {
+    background-color: #10222B;opacity: 0.6;
+    height: 25px;
+  }
+
   footer {
     font-size: 40px;
     font-family: 'Space Grotesk', sans-serif;
@@ -78,15 +82,9 @@
     box-shadow: 0 0 50px #95AB63;
     width: 10rem;
     height: 10rem;
-    margin: 50px 25px;
+    margin-right: 2rem;
+    overflow: visible;
    }
- 
-  
-  
-  header {
-    background-color: #10222B;opacity: 0.6;
-    height: 25px;
-  }
 
   div #left{
     display: flex;
@@ -106,4 +104,5 @@
     flex-direction:row;
     width: 50%;
     align-items: center;
+    justify-content:space-evenly;
   }
