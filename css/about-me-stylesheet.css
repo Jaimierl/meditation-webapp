@@ -1,0 +1,100 @@
+
+/* Color Theme Swatches in Hex 
+.zen-and-tea-1-hex { color: #10222B; }
+.zen-and-tea-2-hex { color: #95AB63; }
+.zen-and-tea-3-hex { color: #BCD685; }
+.zen-and-tea-4-hex { color: #E1F0D5; }
+.zen-and-tea-5-hex { color: #F5FFE0; }*/
+
+*{
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #10222B;opacity: 0.6;
+    height: 25px;
+  }
+
+  nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+    
+  }
+  
+  nav ul {
+      display: flex;
+      
+    }
+  
+  nav ul li a {
+    padding: 1rem;
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;
+    font-size: 18px;
+    color:#E1F0D5;
+  }
+  
+  body {
+    background-color: #E1F0D5; 
+  }
+
+  img {
+    border-radius: 50%;
+    box-shadow: 0 0 50px #95AB63;
+    width: 10rem;
+    height: 10rem;
+    margin-right: 2rem;
+    overflow: visible;
+   }
+  
+  h1{
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    color: #10222B;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 1rem 20rem;
+    border-bottom: solid 10px;
+    border-color: #95AB63;
+  }
+  
+  h2{
+    font-family: 'Playfair Display', serif;
+    font-style: bolder;
+    text-align: center;
+    font-size: 2rem;
+    margin:1rem;
+  }
+
+  .quotation {
+    font-size: 100px;
+    line-height:80%;
+    }
+  
+  div #left{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  div #right{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+ 
+  div #headshot{
+    margin: 25px;
+    display: flex;
+    flex-direction:row;
+    width: 50%;
+    align-items: center;
+    justify-content:space-evenly;
+  }
+
+  div #name {
+    font-family: 'Questrial', sans-serif;
+  }

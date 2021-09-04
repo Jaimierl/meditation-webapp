@@ -1,0 +1,101 @@
+*{
+  box-sizing: border-box;
+}
+
+/* Color Theme Swatches in Hex 
+.zen-and-tea-1-hex { color: #10222B; }
+.zen-and-tea-2-hex { color: #95AB63; }
+.zen-and-tea-3-hex { color: #BCD685; }
+.zen-and-tea-4-hex { color: #E1F0D5; }
+.zen-and-tea-5-hex { color: #F5FFE0; }*/
+
+
+body {
+  background-image: url(/img/meditation-sitdown.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+  font-size: 50px;
+  font-family: 'Playfair Display', serif;
+  color: #10222B;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: auto;
+  border-bottom: solid 10px;
+  border-color: #95AB63;
+}
+
+h4{
+  font-size: 16.5px;
+  font-family: 'Questrial', sans-serif;
+  color: #10222B;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: auto;
+}
+
+.card{
+  flex: auto;
+  opacity: 0.9;
+  padding-bottom: 20px;
+  background-color: #D5D8DE;
+  margin-top: 20rem;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.buttondiv {
+  margin-top: 25px;
+  font-family: 'Questrial', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  
+}
+
+.button {
+  background-color: #95AB63;
+  margin-top: 50px;
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  padding: .3rem 1rem;
+  text-decoration: none;
+  color: #F5FFE0;
+  margin-top: 25px;
+  font-family: 'Questrial', sans-serif;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
