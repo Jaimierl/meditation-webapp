@@ -50,9 +50,9 @@ console.log (chillaxTypeResult);
 
 let fiveNature = "<iframe width='560' height='315' src='https://www.youtube.com/embed/JrQMlzvsLIU?&autoplay=1'></iframe>";
 
-let fiveLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/ER9qZS6IJQM'></iframe>";
+let fiveLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/ER9qZS6IJQM?autoplay=1&mute=1'allow='autoplay'></iframe>";
 
-let fiveGuided = "<iframe width='560' height='315' src='https://www.youtube.com/embed/inpok4MKVLM'></iframe>";
+let fiveGuided = "<iframe width='560' height='315' src='https://www.youtube.com/embed/inpok4MKVLM?autoplay=1&mute=1'allow='autoplay'></iframe>";
 
 // global variables for 10 minute videos
 
@@ -70,30 +70,32 @@ let fifteenGuided = "<iframe width='560' height='315' src='https://www.youtube.c
 
 let fifteenLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/XPkHUvg4-ts'></iframe>";
 
-// function that renders video based on user selections
-// function renderVideo(){
-//   if (chillaxResult === '5' && chillaxTypeResult === 'Guided'){
-//     document.write(fiveGuided);
-//   } else if (chillaxResult === '5' && chillaxTypeResult === 'Nature'){
-//     document.write(fiveNature); 
-//   } else if (chillaxResult === '5' && chillaxTypeResult === 'LoFi'){
-//     document.write(fiveLoFi); 
-//   }  else if (chillaxResult === '10' && chillaxTypeResult === 'LoFi'){
-//     document.write(tenLoFi); 
-//   } else if (chillaxResult === '10' && chillaxTypeResult === 'Nature'){
-//     document.write(tenNature); 
-//   } else if (chillaxResult === '10' && chillaxTypeResult === 'Guided'){
-//     document.write(tenGuided); 
-//   } else if (chillaxResult === '15' && chillaxTypeResult === 'LoFi'){
-//     document.write(fifteenLoFi); 
-//   } else if (chillaxResult === '15' && chillaxTypeResult === 'Guided'){
-//     document.write(fifteenGuided); 
-//   } else if (chillaxResult === '15' && chillaxTypeResult === 'Nature'){
-//     document.write(fifteenNature); 
-//   } else {
-//     alert("MALFUNCTION!")
-//   }
-// };
+
+function renderVideo(){
+  if (chillaxResult === '5' && chillaxTypeResult === 'Guided'){
+    console.log(fiveGuided);
+    document.write(fiveGuided);
+  } else if (chillaxResult === '5' && chillaxTypeResult === 'Nature'){
+    console.log(fiveNature);
+    document.write(fiveNature); 
+  } else if (chillaxResult === '5' && chillaxTypeResult === 'LoFi'){
+    console.log(fiveLoFi);
+    document.write(fiveLoFi); 
+  }  else if (chillaxResult === '10' && chillaxTypeResult === 'LoFi'){
+    document.write(tenLoFi); 
+  } else if (chillaxResult === '10' && chillaxTypeResult === 'Nature'){
+    document.write(tenNature); 
+  } else if (chillaxResult === '10' && chillaxTypeResult === 'Guided'){
+    document.write(tenGuided); 
+  } else if (chillaxResult === '15' && chillaxTypeResult === 'LoFi'){
+    document.write(fifteenLoFi); 
+  } else if (chillaxResult === '15' && chillaxTypeResult === 'Guided'){
+    document.write(fifteenGuided); 
+  } else if (chillaxResult === '15' && chillaxTypeResult === 'Nature'){
+    document.write(fifteenNature); 
+  } else {
+    alert("Chill Your Own Way!")
+  }
 
 // renderVideo();
 let vidSwitch = [];
@@ -136,17 +138,16 @@ switch (chillaxResult && chillaxTypeResult){
       document.write(fifteenLoFi);
         break;
 };
-};
+
+
 
 switchTest();
 
 
-//  let testVideo = document.getElementById('chillaxVid');
-//  testVideo.innerHTML = video;
-
-
-
-// switch (handle submit call will be what we look for in the switch). We do not need parenthesis here because we are looking for the return value of the function, aka which buttons were pressed. This will need to be handle submit because that is the event that puts the info into the function. Either this page or the app.js (most likely this page because it needs access to the video info/this is the time to show the videos)
-// The CASE is the condition that was met. In parenthesis.
-// After the colon is what you want to happen ie. document.write.
-
+// let vid;
+// switch (renderVideo){
+//   case '5':'Guided':
+//     vid = fiveGuided;
+//     break;
+// }
+// 
