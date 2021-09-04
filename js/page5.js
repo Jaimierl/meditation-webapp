@@ -71,33 +71,6 @@ let fifteenGuided = "<iframe width='560' height='315' src='https://www.youtube.c
 let fifteenLoFi = "<iframe width='560' height='315' src='https://www.youtube.com/embed/XPkHUvg4-ts'></iframe>";
 
 
-function renderVideo(){
-  if (chillaxResult === '5' && chillaxTypeResult === 'Guided'){
-    console.log(fiveGuided);
-    document.write(fiveGuided);
-  } else if (chillaxResult === '5' && chillaxTypeResult === 'Nature'){
-    console.log(fiveNature);
-    document.write(fiveNature); 
-  } else if (chillaxResult === '5' && chillaxTypeResult === 'LoFi'){
-    console.log(fiveLoFi);
-    document.write(fiveLoFi); 
-  }  else if (chillaxResult === '10' && chillaxTypeResult === 'LoFi'){
-    document.write(tenLoFi); 
-  } else if (chillaxResult === '10' && chillaxTypeResult === 'Nature'){
-    document.write(tenNature); 
-  } else if (chillaxResult === '10' && chillaxTypeResult === 'Guided'){
-    document.write(tenGuided); 
-  } else if (chillaxResult === '15' && chillaxTypeResult === 'LoFi'){
-    document.write(fifteenLoFi); 
-  } else if (chillaxResult === '15' && chillaxTypeResult === 'Guided'){
-    document.write(fifteenGuided); 
-  } else if (chillaxResult === '15' && chillaxTypeResult === 'Nature'){
-    document.write(fifteenNature); 
-  } else {
-    alert("Chill Your Own Way!")
-  }
-
-// renderVideo();
 let vidSwitch = [];
 
 function vidTestSwitch(){
@@ -139,15 +112,4 @@ switch (chillaxResult && chillaxTypeResult){
         break;
 };
 
-
-
 switchTest();
-
-
-// let vid;
-// switch (renderVideo){
-//   case '5':'Guided':
-//     vid = fiveGuided;
-//     break;
-// }
-// 
