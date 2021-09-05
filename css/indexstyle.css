@@ -11,7 +11,7 @@
 
 
 body {
-  background-image: url(/img/meditation-sitdown.jpg);
+  background-image: url("../img/meditation-sitdown.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
