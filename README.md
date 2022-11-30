@@ -1,6 +1,6 @@
 # Meditation Web App
 
-## Final Project
+## Final Project - [Link!](https://code-201n23.github.io/meditation-webapp/)
 
 **Chillax - Meditation App:**
 Have you been working too hard and staring at your code for hours on end without a break? Then it might be time to ***CHILLAX***. Want to listen to nature sounds or visualize yourself laying on the sandy beach on vacation? Have someone guide you through your break or listen to relaxing beats? This meditation app will be the perfect break for you! Choose your own chill, it's time to ***CHILLAX***. 
